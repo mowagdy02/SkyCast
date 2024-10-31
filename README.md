@@ -12,10 +12,11 @@ SkyCast is a powerful weather forecasting app designed to provide accurate, real
 - **Weekly Forecast**: Offers a 7-day outlook, allowing users to plan for upcoming weather changes.
 - **City Search and Nearby Locations**: Supports global city search functionality to view conditions in any desired location, along with nearby city forecasts.
 - **Sunrise and Sunset Times**: Provides sunrise and sunset information for accurate, location-specific timeframes.
+- **Feedback Page**: Enables users to provide feedback directly through the app, contributing to ongoing improvements and user experience optimization.
 
 ### Technical Stack
 - **Flutter Framework**: Used for building cross-platform, responsive UIs that are visually engaging and interactive.
-- **Android Studio**: Serves as the integrated development environment (IDE) for efficient app development and deployment.
+- **Visual Studio Code**: Employed as the primary integrated development environment (IDE) for efficient coding, debugging, and app deployment.
 - **Weather APIs**: Integrates with trusted weather data providers to ensure accurate, timely information.
 
 SkyCast is designed with future enhancements in mind, including severe weather alerts, map support for visualizing nearby locations, and home screen widgets for quick access to weather updates. This app is built to support ongoing improvements, making it a reliable tool for staying prepared and informed about weather conditions.
@@ -32,4 +33,3 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-
