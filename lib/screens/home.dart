@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/screens/cityscreen.dart';
 import 'package:graduation_project/screens/dayscreen.dart';
+import 'package:graduation_project/screens/feedbackscreen.dart';
 import 'package:graduation_project/screens/homescreen.dart';
 import '../shared/api.dart';
 import '../shared/assets.dart';
@@ -17,6 +18,7 @@ class _HomeState extends State<Home> {
     HomeScreen(),
     CityScreen(),
     DayScreen(),
+    FeedbackScreen()
   ];
   int index = 0;
   final appAssets = AppAssets();
@@ -58,6 +60,10 @@ class _HomeState extends State<Home> {
                   icon: Icon(Icons.calendar_month,
                       color: Color.fromARGB(255, 255, 255, 255)),
                   label: "Day"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.feedback,
+                      color: Color.fromARGB(255, 255, 255, 255)),
+                  label: "feedback"),
             ]),
       ),
     );

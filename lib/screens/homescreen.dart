@@ -1,8 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:graduation_project/screens/cityscreen.dart';
-import 'package:graduation_project/screens/dayscreen.dart';
 import 'package:graduation_project/widgets/customtext.dart';
 import 'package:intl/intl.dart';
 import '../shared/api.dart';
@@ -27,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {}); // Update UI after fetching data
   }
 
-  List<Widget> screen = [HomeScreen(), CityScreen(), DayScreen()];
   int index = 0;
   final appAssets = AppAssets();
 
