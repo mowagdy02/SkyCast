@@ -11,7 +11,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => Home()));
     });
@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Expanded(
                 child: Center(
               child: Text(
-                "Weather Forecasts",
+                "SkyCast",
                 style: TextStyle(color: Colors.white, fontSize: 55),
               ),
             )),

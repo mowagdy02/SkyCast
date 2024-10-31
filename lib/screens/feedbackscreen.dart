@@ -17,6 +17,8 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
     {'icon': Icons.ac_unit, 'label': 'Snowy'},
     {'icon': Icons.water_drop, 'label': 'Rainy'},
   ];
+  TextEditingController email = TextEditingController();
+  TextEditingController feedback = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -116,6 +118,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
               const SizedBox(height: 10),
               TextField(
                 maxLines: 6,
+                controller: feedback,
                 style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   hintText: 'Type your feedback here...',
@@ -139,6 +142,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
               const SizedBox(height: 10),
               TextField(
                 style: const TextStyle(color: Colors.white),
+                controller: email,
                 decoration: InputDecoration(
                   hintText: 'Enter your email if you would like a response',
                   hintStyle: const TextStyle(color: Colors.white70),
@@ -156,7 +160,8 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
               Center(
                 child: ElevatedButton(
                   onPressed: () {
-                    // Implement submit feedback functionality
+                    feedback.clear();
+                    email.clear();
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                           content: Text('Thank you for your feedback!')),
