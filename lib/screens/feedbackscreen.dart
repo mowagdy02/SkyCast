@@ -28,7 +28,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
 
     final Uri emailUri = Uri(
       scheme: 'mailto',
-      path: 'example@example.com', // Replace with the actual email address
+      path: 'ziadsameh036@gmail.com', 
       query: 'subject=$subject&body=$body',
     );
 
